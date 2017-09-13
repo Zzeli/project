@@ -1,0 +1,88 @@
+@import url(base.css);
+body,html,.container{
+	width: 100%;
+	background: #fff;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	background: #fff;
+}
+.cloud{
+	margin-top: 0.3rem;
+	width: 100%;
+	height: 2.66rem;
+	background: url("images/cloud.png")center/cover no-repeat;
+}
+.app-logo{
+	width: 100%;
+}
+.app-logo p{
+	font-size: 0.32rem;
+    line-height: 0.43;
+    text-align: center;
+    color: #1d98f6;
+    margin-top: 0.26rem;
+    font-weight: bold;
+}
+.logo{
+	width: 1.51rem;
+	height: 1.49rem;
+	background: url("images/logo.png")center/cover no-repeat;
+	margin:-1.05rem auto 0;
+}
+.slogan{
+	width: 5.48rem;
+	margin-top: 1.07rem;
+	margin-bottom: 0.81rem;
+
+}
+.code_con{
+	width: 2.08rem;
+	height: 2.08rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.code_con .con{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+.code_con .code{
+	width: 1.86rem;
+	height: 1.86rem;
+}
+.upload{
+	font-size: 0.26rem;
+  color: #1d98f6;
+  margin-top: 0.36rem;
+}
+.superman{
+	width: 100%;
+    margin-top: 0.64rem;
+	padding: 0 0.69rem 0 0.38rem;
+
+}
+.superman .earth{
+	width: 100%;
+	height: 2.88rem;
+	background: url("images/earth.png")center/cover no-repeat;
+	margin-top: -1.1rem;
+	position: relative;
+	z-index: 1;
+}
+.superman .man{
+	width: 1.46rem;
+	height: 2rem;
+	background: url("images/man.png")center/cover no-repeat;
+	margin:0 auto;
+	position: relative;
+	z-index: 2;
+}

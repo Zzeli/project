@@ -1,0 +1,82 @@
+@import "base.css";
+@import "mixin";
+body,html,.container{
+  background-color:  #f4f4f4;
+}
+.container{
+  overflow: scroll;
+}
+.message,.messages{
+  width:100%;
+  background: url("../images/290252@2x.png") no-repeat center/cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 2.13rem;
+  padding-top: 0.79rem;
+  padding-bottom: 0.78rem;
+  img{
+    width:1.41rem;
+    height: 1.41rem;
+  }
+  .name{
+    font-family: PingFang-SC;
+    font-size: 0.34rem;
+    font-weight: 500;
+    text-align: left;
+    color: #000000;
+    margin-top: 0.32rem;
+    margin-bottom: 0.15rem;
+  }
+  .artname{
+    font-family: PingFang-SC;
+    font-size: 0.28rem;
+    font-weight: 500;
+    text-align: left;
+    color: #676363;
+  }
+  .price{
+   font-size: 0.517rem;
+ line-height: 1.43;
+    font-weight: 500;
+    color: #faf8f8;
+  }
+}
+.messages{
+  background: url("../images/组-3@2x.png") no-repeat center/cover;
+}
+.weui-cell__hd img{
+  width:0.41rem;
+  height: 0.43rem;
+  margin-right: 0.23rem;
+}
+.weui-grids{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  .weui-grid__icon{
+    width:0.7rem;
+    height: 0.7rem;
+    margin-bottom: 0.22rem;
+  }
+  a{
+    border: none;
+    width: 50%;
+  }
+}
+
+.weui-grid__label{
+  font-size: 0.34rem;
+  color: #000;
+
+
+}
+.weui-cells{
+
+  font-size: 0.34rem;
+  font-weight: 500;
+  text-align: left;
+  color: #000000;
+}

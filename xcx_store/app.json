@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/purchase/purchase",    
+    "pages/details/details",    
+    "pages/cart/cart",
+
+    "pages/index/index",    
+    "pages/service/service",    
+    "pages/myself/myself",
+    "pages/splash/splash",
+    "pages/classify/classify",
+    "pages/importer/importer",
+    "pages/template/template",
+    "pages/variety/variety"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#56A8F4",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/main.png",
+        "selectedIconPath": "images/home.png",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/option.png",
+        "selectedIconPath": "images/classify.png",
+        "pagePath": "pages/classify/classify",
+        "text": "分类"
+      },
+      {
+        "iconPath": "images/service.png",
+        "selectedIconPath": "images/servey-select.png",
+        "pagePath": "pages/service/service",
+        "text": "客服"
+      }
+    ]
+  }
+}

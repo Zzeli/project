@@ -1,0 +1,32 @@
+@import "base.css";
+@import "mixin";
+
+.container{
+  overflow:scroll;
+  padding: 0;
+}
+body{
+  background-color: #f4f4f4;
+}
+.pic{
+  width: 100%;
+  background: url("../images/组-2@2x.png")no-repeat center/cover;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+.weui-cell:nth-child(1){
+  background-color: #f4f4f4;
+}
+
+.weui-cell__hd{
+  img{
+    width: 0.47rem;
+    height: 0.41rem;
+    margin-right: 0.22rem;
+  }
+}
+.weui-cells_radio{
+  margin-top: 0;
+}

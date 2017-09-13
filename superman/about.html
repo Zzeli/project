@@ -1,0 +1,120 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--BootStrap设计的页面支持响应式的 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>关于我们</title>
+    <!--引入BootStrap的CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+<!--整体div-->
+    <!--导航栏-->
+    <div>
+        <nav class="navbar navbar-inverse">
+      <div class="container">
+
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+
+                    <a class="navbar-brandnavbar-brand" href="#"><img src="images/logo.png" alt="">我是超人</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="about.html">关于我们</a></li>
+                        <li><a href="news.html">新闻动态</a></li>
+                        <li><a href="release.html">版本记录</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+    </div>
+<!--图片轮播-->
+<div class="carousel">
+    <div>我是超人APP</div>
+    <div>打造中国最具有影响力的服务平台</div>
+</div>
+<!--信息展示-->
+<div class="title">
+    <div class="container">
+        <div class="message">
+            <p class="text-uppercase">about us</p>
+            <p class="text-capitalize">关于我是超人</p>
+        </div>
+        <div class="position">
+            <div class="pic"></div>
+            <ol class="breadcrumb">
+                <div class="word">您当前的位置：</div>
+                <li><a href="#">首页</a></li>
+                <span>-</span>
+                <li class="active">关于我们</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="news-detail">
+    <div class="container">
+        <ul class="details">
+            <div class="media">
+                <div class="media-body">
+                    <h3>我是超人</h3>
+                    <p>“ 我是超人” 是在共享经济背景下开发的O2O项目，旨在解决社会失业人员的再就业问题。这款APP是基于LBS定位的生活服务类应用，主要目标人群为20-30岁左右的年轻群体，在该平台上用户可以满足多方面的需求，无论是生活、学习还是工作。” 我是超人“ 也是一款社交型APP，用户可以发布个性化的需求，通过数据匹配和LBS定位功能的实现，供需双方会找到彼此，促成交易。</p>
+                    <h4>我是超人的业务主要包括三种形式：1、技术授权；2、移动广告；3、付费会员。</h4>
+                </div>
+            </div>
+
+
+        </ul>
+        <div class="web">
+            <div class="web-pic"></div>
+            <p>我是超人官网：www.superman.com</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        ©2017 山西欢颜网络科技有限公司 晋ICP备17001355号-1
+    </div>
+</div>
+
+
+</body>
+</html>
+<script>
+    // 当页面加载之后
+    window.onload=function  () {
+        // 常量 const
+        const designWidh=1920;
+        const fontSize= 100;
+        function resizeFont(){
+            // 变量 var
+            var CW = document.documentElement.clientWidth;
+
+            var ratio = CW/designWidh;
+
+            var newFontSize=ratio<1?fontSize*ratio:100;
+
+            document.querySelector("html").style.fontSize= newFontSize + "px";
+
+        }
+        // 执行resizeFont
+        resizeFont();
+        // 窗口大小改变时执行resizeFont
+        window.onresize= resizeFont;
+        window.addEventListener("orientation",resizeFont,false);
+        // 屏幕自动旋转得时候
+    }
+</script>

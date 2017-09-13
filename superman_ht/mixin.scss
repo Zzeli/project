@@ -1,0 +1,125 @@
+@mixin juzhong{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+%juzhong{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@mixin  zuoyou{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@mixin shangxia{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@mixin  fang($size){
+  width: $size;
+  height: $size;
+}
+
+@mixin  yuan($size){
+  @include fang($size);
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+@mixin box($size){
+  @include fang($size);
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+@mixin fenbianlv($bian){
+  //$fenbian:1080px,540px,480px,414px,412px,385px,375px,360px,320px;
+  $fenbian:320px,360px,375px,385px,412px,414px,480px,540px,640px,720px,750px,1080px;
+  @each $size in $fenbian{
+    @media screen and(min-width: $size){
+      font-size: 100px*$size/$bian}
+  }
+}
+
+
+body{
+  font-family: "Helvetica Neue","微软雅黑",sans-serif;
+  font-size: 16px;
+  font-weight:100;
+  background: #fefefe;
+}
+
+@mixin fudong{
+  &::after{
+    content: "";
+    width: 100%;
+    height:0;
+    display: inline-block;
+    overflow: hidden;
+  }
+}
+
+
+@mixin fangtu($tu){
+  background: url($tu) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+body,h1,h2,h3,p,ul,ol,form,dl,dt,dd,ul,li,span{
+  margin:0;
+  padding:0;
+
+}
+
+
+
+a{
+  border:none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color:transparent;
+  outline:none;
+  text-decoration:none;
+}
+a:link{text-decoration:none;   /* 指正常的未被访问过的链接*/}
+a:visited{text-decoration:none; /*指已经访问过的链接*/}
+a:hover{text-decoration:none;/*指鼠标在链接*/}
+a:active{text-decoration:none;/* 指正在点的链接*/}
+img{
+  border:none;
+}
+h1,h2,h3{
+  font-weight:normal;
+}
+a{
+  color:#333;
+  text-decoration:none;
+}
+
+
+ul li{
+  list-style-type: none;
+}
+
+
+

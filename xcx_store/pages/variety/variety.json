@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "种类列表",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+
+}

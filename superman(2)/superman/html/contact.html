@@ -1,0 +1,127 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--BootStrap设计的页面支持响应式的 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>联系我们</title>
+    <!--引入BootStrap的CSS-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+<!--整体div-->
+<div class="container">
+    <!--导航栏-->
+    <div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+
+                    <a class="navbar-brandnavbar-brand" href="#"><img src="../images/logo.png" alt="">我是超人</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">新闻动态<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">版本记录</a></li>
+                        <li class="active"><a href="#">联系我们</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+</div>
+<!--图片轮播-->
+<div class="carousel">
+    <div>我是超人APP</div>
+    <div>打造中国最具有影响力的服务平台</div>
+</div>
+<!--信息展示-->
+<div class="title">
+    <div class="container">
+        <div class="message">
+            <p class="text-uppercase">contact</p>
+            <p class="text-capitalize">联系我们</p>
+        </div>
+        <div class="position">
+            <div class="pic"></div>
+            <ol class="breadcrumb">
+                <div class="word">您当前的位置：</div>
+                <li><a href="#">首页</a></li>
+                <span>-</span>
+                <li class="active">联系我们</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="news-detail">
+    <div class="container">
+        <div class="details">
+            <div class="box">
+                <div class="border"></div>
+            <dl>
+                <dt>
+                    中国
+                    <div class="china"></div>
+                </dt>
+                <dd>1507, building 2 Joy Mansion 99 Chaoyang
+                    North Road Chaoyang District. Beijing</dd>
+            </dl>
+            <address>
+                <strong>北京市朝阳区朝阳北路99号2号楼 1507</strong><br>
+                <div>
+                (战略合作qq) 1360318900<br>
+                (市场合作qq) 905748161</br>
+                (商务合作qq) 2028364307</br>
+                (技术支持qq) 3033957406</br>
+                (其它事宜) chinabd@bluestacks.com</br>
+                </div>
+            </address>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        ©2017 山西欢颜网络科技有限公司 晋ICP备17001355号-1
+    </div>
+</div>
+
+
+</body>
+</html>
+<script>
+    // 当页面加载之后
+    window.onload=function  () {
+        // 常量 const
+        const designWidh=1920;
+        const fontSize= 100;
+        function resizeFont(){
+            // 变量 var
+            var CW = document.documentElement.clientWidth;
+
+            var ratio = CW/designWidh;
+
+            var newFontSize=ratio<1?fontSize*ratio:100;
+
+            document.querySelector("html").style.fontSize= newFontSize + "px";
+
+        }
+        // 执行resizeFont
+        resizeFont();
+        // 窗口大小改变时执行resizeFont
+        window.onresize= resizeFont;
+        window.addEventListener("orientation",resizeFont,false);
+        // 屏幕自动旋转得时候
+    }
+</script>

@@ -1,0 +1,219 @@
+
+* {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+.action{
+  padding-top: 0.63rem;
+}
+.nav-tabs{
+  width:25%;
+  display: flex;
+  justify-content: space-around;
+  border:0;
+  margin: 0 auto;
+  li{
+    width:0.6rem;
+    height: 0.6rem;
+    background-color: #e7e7e7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.15rem;
+    line-height: 1.6;
+    text-align: center;
+    a{
+      color: #999999;
+
+    }
+  }
+
+}
+
+.tab-content > .tab-pane {
+  display: none;
+}
+.tab-content > .active {
+  display: block;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  width:0.6rem;
+  height: 0.6rem;
+  background-color: #41a5ed;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.15rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #fff;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  border:none;
+}
+.nav-tabs>li>a:focus, .nav-tabs>li>a:hover{
+  width:0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.15rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #fff;
+  background-color: #41a5ed;
+}
+.tab-content{
+  padding-top: 0.66rem;
+  ul{
+    margin-bottom: 0;
+  }
+
+  .box{
+            margin: 0 auto;
+            display: flex;
+        }
+
+        /**************左边的li**********************/
+        .zuo-box{
+            width: 50%;
+            border-right:0.01rem solid #41a5ed;
+            float: left;
+        }
+        .you-box{
+            width: 50%;
+            float: left;
+            margin-top: 0.98rem;
+        }
+
+        .zuo{
+            width: 100%;
+            position: relative;
+            margin-bottom: 0.7rem;
+            padding-left:0.69rem;
+            display: flex;
+            align-items: center;
+            .chat{
+            flex: 1 0 auto;
+           width:0.2rem;
+           height: 0.2rem;
+           background: url("../images/right.png")center/cover no-repeat;
+           margin-right: 0.2rem;
+      }
+ }
+
+
+  .you{
+            width: 100%;
+            position: relative;
+            margin-bottom: 0.7rem;
+            padding-left:0.69rem;
+            display: flex;
+            align-items: center;
+            .chat{
+            flex: 1 0 auto;
+           width:0.2rem;
+           height: 0.2rem;
+           background: url("../images/left.png")center/cover no-repeat;
+      }
+    }
+        .you::after{
+            content: "";
+            width: 100%;
+            height:0;
+            display: inline-block;
+            overflow: hidden;
+        }
+        .you-nei-zhong{
+           width: 0.7rem;
+            height: 0.78rem;
+            background: url("../images/date.png")center/cover no-repeat;
+            float: left;
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+             margin-right: 0.2rem;
+      }
+        .you-nei-yuan{
+            width: 0.16rem;
+            height: 0.16rem;
+            border:0.01rem solid #41A5ED;
+            position: absolute;
+            left: -0.08rem;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background: #fff;
+        }
+        .zuo::after{
+            content: "";
+            width: 100%;
+            height:0;
+            display: inline-block;
+            overflow: hidden;
+        }
+        .zuo-nei-zuo{
+            padding: 0.32rem 0.23rem 0.48rem 0.13rem;
+            background: #f0f0f0;
+            font-size: 0.15rem;
+            line-height: 1.6;
+            text-align: left;
+            color: #666666;
+            flex: 1 0 auto;
+            border-radius: 0.06rem;
+        }
+        .zuo-nei-zhong{
+            width: 0.7rem;
+            height: 0.78rem;
+            background: url("../images/date.png")center/cover no-repeat;
+            float: left;
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+           .day{
+                font-size: 0.36rem;
+                font-weight: bold;
+                line-height: 1;
+                letter-spacing: 0.009rem;
+                text-align: left;
+                color: #41a5ed;
+                margin-top: 0.15rem;
+            }
+            .year{
+              font-size: 0.16rem;
+              line-height: 2.25;
+              letter-spacing: 0.004rem;
+              text-align: left;
+              color: #ffffff;
+            }
+        .zuo-nei-yuan{
+            flex: 1 0 auto;
+            width: 0.16rem;
+            height: 0.16rem;
+            border:1px solid #41A5ED;
+            position: absolute;
+            right: -0.08rem;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background: #fff;
+        }
+
+
+}

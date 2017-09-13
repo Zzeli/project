@@ -1,0 +1,17 @@
+@import "base.css";
+@import "mixin";
+.container{
+   height: 100%;
+  padding-top: 1.64rem;
+  box-sizing: border-box;
+ }
+.weui-flex{
+  height: 100%;
+  flex-direction: column;
+}
+.payment{
+  img{
+    width:2rem;
+    height:2rem;
+  }
+}

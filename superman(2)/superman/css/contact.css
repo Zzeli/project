@@ -1,0 +1,39 @@
+.details {
+  justify-content: flex-start !important;
+  padding-bottom: 1.61rem; }
+  .details .box {
+    width: 4.84rem; }
+  .details .border {
+    opacity: 0.2;
+    border-top: solid 0.05rem #666;
+    margin-bottom: 0.4rem; }
+  .details dt {
+    font-size: 0.24rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #666666 !important;
+    margin-bottom: 0.26rem;
+    display: flex;
+    justify-content: space-between; }
+  .details .china {
+    width: 0.41rem;
+    height: 0.31rem;
+    background: url("../images/china.png") center/cover no-repeat; }
+  .details dd {
+    font-size: 0.24rem;
+    line-height: 1.17;
+    text-align: left;
+    color: #666666; }
+  .details address {
+    font-size: 0.17rem;
+    line-height: 1.53;
+    text-align: left;
+    color: #666666; }
+    .details address div {
+      margin-top: 0.19rem; }
+  .details strong {
+    font-size: 0.24rem;
+    line-height: 1.17;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 0.19rem; }

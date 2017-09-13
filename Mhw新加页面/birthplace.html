@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>籍贯</title>
+    <link rel="stylesheet" href="css/weui.css"/>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/add.css">
+</head>
+<style>
+
+.info{text-align:center;}
+.info #show{ color:#3399FF; }
+.bottom{ text-align:right; font-size:12px; color:#CCCCCC; width:1000px;}
+</style>
+<body ontouchstart>
+
+<div class="container" id="container">
+    <!--<div class="weui-cells weui-cells_radio">-->
+        <div class="weui-cell" style="padding-top: 0.49rem;padding-bottom: 0.3rem;">
+            <p>籍贯</p>
+        </div>
+
+		<div class="weui-cells">
+		  <div class="weui-cell" style="padding: 0; ">
+		      <!-- <input class="weui-input" type="text" value="山西省阳曲县"> -->
+               <div class="weui-cell__bd">
+              <div class="info">
+                <div style="padding-bottom: 0.2rem">
+                <select id="s_province" name="s_province" style="padding-left: 0.34rem;">
+               </select>&nbsp;&nbsp;
+                <select id="s_city" name="s_city" style="padding-left: 0.34rem"></select>&nbsp;&nbsp;
+                <select id="s_county" name="s_county" style="padding-left: 0.34rem"></select>
+                <script class="resources library" src="js/area.js" type="text/javascript"></script>
+
+                <script type="text/javascript">_init_area();</script>
+                </div>
+
+                <div id="show"></div>
+                </div>
+
+
+                </div>
+
+		  </div>
+		</div>
+       
+    
+    <a href="javascript:;" class="weui-btn">确定</a>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+var Gid  = document.getElementById ;
+var showArea = function(){
+    Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +    
+    Gid('s_city').value + " - 县/区" + 
+    Gid('s_county').value + "</h3>"
+                            }
+Gid('s_county').setAttribute('onchange','showArea()');
+</script>

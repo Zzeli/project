@@ -1,0 +1,68 @@
+<!--details.wxml-->
+<view class="content">
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" data-src="{{item}}" bindtap="previewImage"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<scroll-view scroll-y="true">
+  <view class="detail" wx:for="{{goods}}">
+    <text class="title">{{item.details}}</text>
+    <view class="price">
+      <text>售价</text>
+      <text>￥</text>
+       {{item.price}}
+       <text class="stock">库存</text>
+       <text class="num">{{item.stock}}</text>
+       
+       <text class="carriage">运费</text>
+       <text class="charge">{{item.carriage}}</text>
+    </view>
+    <view class="market">
+        <text>市场价</text>
+        <view class="no1" style="color:#c1c3c6">
+           ￥{{item.market}}
+           <rich-text nodes="{{nodes}}" bindtap="tap"></rich-text>
+        </view>
+    </view>
+  </view>
+  <view class="separate"></view>
+  <view class="describe" wx:for="{{describe}}">
+    <view class="title">商品介绍</view>
+    <view class="matter">{{item.matter}}</view>
+  
+  </view>
+
+
+  <view class="describe exhibit">
+    <view class="title">商品展示</view>
+    <view class="matter show">
+      <image src="{{item.img}}" class="pic" wx:for="{{display}}"></image> 
+
+    </view>
+  
+  </view> 
+  
+<view class="temp"></view>
+</scroll-view>
+<!-- 底部悬浮栏 -->
+<view class="detail-nav">
+  <navigator url="../cart/cart?title=redirect" open-type="redirect" hover-class="other-navigator-hover">
+     <image src="../../images/carts.png"></image>
+ </navigator>
+  <view class="cartsNumber">{{cartTatol}}</view>
+  <image src="../../images/chat.png">
+      <contact-button 
+      type="default-light" 
+      size="20"
+      session-from="weapp" >
+    </contact-button>
+  </image>
+  <button class="button-green" bindtap="addCar" formType="submit">加入购物车</button>
+  <button class="button-red" bindtap="immeBuy" formType="submit">立即购买</button>
+</view>
+
+
+</view>

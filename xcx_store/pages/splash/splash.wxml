@@ -1,0 +1,7 @@
+<!--splash.wxml-->
+  <view class="splash" hidden="{{splash}}">
+       <button>
+           {{second}}s后跳过
+         <view class="button-opacity"></view>
+       </button>
+ </view> 

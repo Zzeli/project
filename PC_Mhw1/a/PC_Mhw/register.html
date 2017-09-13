@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>注册</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="content">
+    <div class="header">
+        <div class="logo">
+            <div class="logo"></div>
+            <div class="title"></div>
+        </div>
+        <div class="search">
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                   <div class="geolocation" id="geolocation"></div>
+                    <input type="text" class="form-control">
+                    <a href="#"></a>
+                </div>
+            </form>
+            <div class="login">
+                <a href="login.html" class="left">登录</a>
+            <a href="register.html" class="right">注册</a>
+            </div>
+        </div>
+    </div>
+    <div class="toggle">
+        <nav class="navbar navbar-default" style="width: 100%">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+                    <li><a href="news.html">新闻动态</a></li>
+                    <li><a href="education.html">学历教育</a></li>
+                    <li><a href="workplace.html">职场考证</a></li>
+                    <li><a href="vip_message.html">会员中心</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </div>
+  <div class="login-box" style="margin-bottom: 291px">
+        <div class="login-icon"></div>
+        <form action="#" method="post" id="signupForm">
+            <div class="form-group input-group login-username">
+                <span class="input-group-addon" id="basic-addon1"></span>
+                <input type="text" class="form-control" name="username" placeholder="请输入手机号" aria-describedby="basic-addon1" required>
+            </div>
+            <div class="form-group zhuce-verify-box">
+                <div class="input-group zhuce-verify">
+                    <span class="input-group-addon" id="basic-addon3"></span>
+                    <input id="input1" type="text" class="form-control" name="verify" placeholder="请输入验证码" aria-describedby="basic-addon1" onkeyup="value=value.replace(/[^\d]/g,'') " ng-pattern="/[^a-zA-Z]/" required>
+                </div>
+                <div class="btn-group zhuce-duanxi zhuce-yifa" role="group">
+                    <button type="button" class="btn btn-default">发送验证码</button>
+                </div>
+            </div>
+
+
+            <div class="form-group input-group login-username" style="margin-top: 0">
+                <span class="input-group-addon" id="basic-addon2"></span>
+                <input id="password" type="password" class="form-control" name="password" placeholder="请输入密码" aria-describedby="basic-addon1" required>
+            </div>
+            <div class="form-group input-group login-username" style="margin-top: 18px">
+                <span class="input-group-addon" id="basic-addon4"></span>
+                <input type="password" class="form-control" name="confirm_password" placeholder="请输入密码" aria-describedby="basic-addon1" required>
+            </div>
+            <div class="btn-group login-anniu" role="group">
+                <button type="submit" class="btn btn-default">提交</button>
+            </div>
+          
+
+             <p style="width: 406px; position: relative;display: flex;align-items: center; margin-top: 13px;">
+                  <input type="checkbox" class="checkbox" id="agree" name="agree" style="width:14px; height:14px;display: flex;justify-content: flex-start;text-align: left; margin-right: 6px;margin-top: 0;">
+                  <label for="agree" style="margin-bottom: 0;font-size: 14px;font-weight: 500;text-align: left;color: #9b9b9b;">请同意我们的声明</label>
+                <a href="#" style="float: none;font-size: 14px;font-weight: 500;text-align: left;color: #9b9b9b;">《用户协议》</a>
+                </p>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="skill"><div>技术支持</div>
+            <div style="margin-left: 20px">山西欢颜网络科技有限公司</div></div>
+    </footer>
+</div>
+
+</body>
+</html>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=64c77a00d03b6672c56e2d2341534d56&plugin=AMap.CitySearch"></script>
+<script>
+$.validator.setDefaults({
+    submitHandler: function() {
+      alert("提交事件!");
+//            $.ajax({
+//                url:"ajax.php",
+//                type:'post',
+//                dataType:"json",
+//                data:obj,
+//                beforeSend:function(){
+//                    that.find("button").text("正在发送...")
+//                },
+//                success:function(msg)
+//                {
+//                   //这块填写返回数据的处理，，要是数据返回的是成功就直接跳转首页
+//
+//                }
+//            })
+           }
+});
+$().ready(function() {
+// 在键盘按下并释放及提交后验证提交表单
+  $("#signupForm").validate({
+        rules: {
+          username: {
+            required: true,
+            digits:true,
+            minlength: 11,
+            maxlength:11,
+          },
+          password: {
+            required: true,
+            minlength: 6,
+          },
+          confirm_password: {
+            required: true,
+            minlength: 6,
+            equalTo: "#password"
+          },
+          verify:{
+            required: true,
+            digits:true,
+            minlength: 4,
+            maxlength:4,
+          },
+          agree: "required"
+        },
+        messages: {
+          username: {
+            required: "请输入手机号",
+            digits:"必须11位整数",
+            minlength: "请输入正确的手机号",
+            maxlength: "请输入正确的手机号",
+          },
+          password: {
+            required: "请输入密码",
+            minlength: "密码长度不能小于 6 位",
+          },
+          confirm_password: {
+            required: "请输入密码",
+            minlength: "密码长度不能小于 6位",
+            equalTo: "两次密码输入不一致"
+          },
+          verify:{
+            required: "输入验证码",
+            minlength: "验证码错误",
+            maxlength:"验证码错误",
+            digits:"格式错误",
+          },
+          agree: "请接受我们的声明",
+        }
+    });
+
+
+
+   $(".zhuce-duanxi").on("click",function () {
+        var username=$("input[name='username']").val()
+        if(!(/^1[34578]\d{9}$/.test(username))){
+            // alert("手机号码有误，请重新输入");
+            $("input[name='username']").val("")
+            return false;
+        }
+        var that=$(this)
+        var timer=60
+        /*
+        * 倒计时函数
+        * timer设置时间
+        * */
+        function Countdown() {
+            if (timer >= 1) {
+                timer -= 1;
+                var t=setTimeout(function() {
+                    if(timer==0){
+                        that.find("button").text("重新发送")
+                        that.addClass("zhuce-duanxi")
+                    }else {
+                        that.removeClass("zhuce-duanxi")
+                        that.find("button").text(timer+"s")
+                        Countdown();
+                    }
+                }, 1000);
+            }
+        }
+        Countdown()
+//        $.ajax({
+//            url:"ajax.php",
+//            type:'post',
+//            dataType:"json",
+//            data:username,
+//            beforeSend:function(){
+//                that.find("button").text("正在发送...")
+//            },
+//            success:function(msg)
+//            {
+//                Countdown()
+//            }
+//        })
+
+    })
+
+});
+</script>

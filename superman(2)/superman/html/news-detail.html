@@ -1,0 +1,134 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--BootStrap设计的页面支持响应式的 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>新闻详情</title>
+    <!--引入BootStrap的CSS-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/news-detail.css">
+
+</head>
+<body>
+<!--整体div-->
+<div class="container">
+    <!--导航栏-->
+    <div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+
+                    <a class="navbar-brandnavbar-brand" href="#"><img src="../images/logo.png" alt="">我是超人</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li class="active"><a href="#">新闻动态<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">版本记录</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+</div>
+<!--图片轮播-->
+<div class="carousel">
+    <div>我是超人APP</div>
+    <div>打造中国最具有影响力的服务平台</div>
+</div>
+<!--信息展示-->
+<div class="title">
+    <div class="container">
+        <div class="message">
+            <p class="text-uppercase">news</p>
+            <p class="text-capitalize">新闻动态</p>
+        </div>
+        <div class="position">
+            <div class="pic"></div>
+            <ol class="breadcrumb">
+                <div class="word">您当前的位置：</div>
+                <li><a href="#">首页</a></li>
+                <span>-</span>
+                <li class="active">新闻动态</li>
+            </ol>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="news-detail">
+    <div class="container">
+        <div class="details">
+            <blockquote>
+                <p>顺网科技携手硅谷大鳄顺网与BlueStacks蓝叠达成战略合作 打造移动游戏最大网吧渠道</p>
+                <footer>2016-05-10</footer>
+            </blockquote>
+
+        </div>
+            <div class="col-sm-6 col-md-4 col-lg-1">
+                <div class="thumbnail">
+                    <img src="../images/big.png" alt="...">
+                    <div class="caption">
+                        <p style="margin-bottom: 0.3rem">在过去的两年时间内，游戏行业发生了巨大变革，PC游戏进入了增长停滞期，移动游戏的发展却是昂扬向上。面对移动互联的冲击，越来越多的企业开始转换思维模式来尝试和移动互联的深度结合！3月31日，安卓模拟器之父BlueStacks蓝叠与国内著名游戏研发发行商网易，正式宣布缔结战略合作关系，将以提供核心技术授权和技术服务的方式全程支持网易开发官方安卓模拟器工具“网易手游助手暂定名） (http://zs.163.com/）xx正式成为网易唯一的官方指定合作安卓模拟器引擎，这是双方首次发布合作消息。</p>
+
+                            <p>在过去的两年时间内，游戏行业发生了巨大变革，PC游戏进入了增长停滞期，移动游戏的发展却是昂扬向上。面对移动互联的冲击，越来越多的企业开始转换思维模式来尝试和移动互联的深度结合！3月31日，安卓模拟器之父BlueStacks蓝叠与国内著名游戏研发发行商网易，正式宣布缔结战略合作关系，将以提供核心技术授权和技术服务的方式全程支持网易开发官方安卓模拟器工具“网易手游助手暂定名） (http://zs.163.com/）xx正式成为网</p>
+                        <nav aria-label="...">
+                            <ul class="pager">
+                                <li class="previous">
+                                    <a href="javascript:;">
+                                        <div class="opacity"></div>
+                                        <span aria-hidden="true">&larr;</span> 上一篇
+                                    </a>
+                                </li>
+                                <li class="next"><a href="javascript:;" class="active">
+                                    <div class="opacity"></div>
+                                    下一篇 <span aria-hidden="true">&rarr;</span>
+                                </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+</div>
+<div>
+    <div class="col-md-4 col-sm-6 col-xs-12" style="height: 1.3rem!important;">
+        ©2017 山西欢颜网络科技有限公司 晋ICP备17001355号-1
+    </div>
+</div>
+</body>
+</html>
+<script>
+    // 当页面加载之后
+    window.onload=function  () {
+        // 常量 const
+        const designWidh=1920;
+        const fontSize= 100;
+        function resizeFont(){
+            // 变量 var
+            var CW = document.documentElement.clientWidth;
+
+            var ratio = CW/designWidh;
+
+            var newFontSize=ratio<1?fontSize*ratio:100;
+
+            document.querySelector("html").style.fontSize= newFontSize + "px";
+
+        }
+        // 执行resizeFont
+        resizeFont();
+        // 窗口大小改变时执行resizeFont
+        window.onresize= resizeFont;
+        window.addEventListener("orientation",resizeFont,false);
+        // 屏幕自动旋转得时候
+    }
+</script>

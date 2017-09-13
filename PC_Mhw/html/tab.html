@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+
+    .tab-content > .tab-pane {
+        display: none;
+    }
+    .tab-content > .active {
+        display: block;
+    }
+</style>
+<body>
+
+
+<!-- 选项卡组件（菜单项nav-tabs）-->
+<ul id="myTab" class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#bulletin" role="tab" data-toggle="tab">公告</a></li>
+    <li><a href="#rule" role="tab" data-toggle="tab">规则</a></li>
+    <li><a href="#forum" role="tab" data-toggle="tab">论坛</a></li>
+    <li><a href="#security" role="tab" data-toggle="tab">安全</a></li>
+    <li><a href="#welfare" role="tab" data-toggle="tab">公益</a></li>
+</ul>
+
+<!-- 选项卡面板 -->
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane active" id="bulletin">公告内容面板</div>
+    <div class="tab-pane" id="rule">规则内容面板</div>
+    <div class="tab-pane" id="forum">论坛内容面板</div>
+    <div class="tab-pane" id="security">安全内容面板</div>
+    <div class="tab-pane" id="welfare">公益内容面板</div>
+</div>
+
+
+<ul id="myTab2" class="nav nav-tabs" role="tablist">
+    <li><a href="#a" role="tab">娱乐</a></li>
+    <li><a href="#b" role="tab">房产</a></li>
+    <li><a href="#c" role="tab">国内</a></li>
+    <li><a href="#d" role="tab">国外</a></li>
+</ul>
+<!-- 选项卡面板 -->
+<div id="myTabContent2" class="tab-content">
+    <div class="tab-pane fade in active" id="a">娱乐内容面板</div>
+    <div class="tab-pane fade" id="b">房产内容面板</div>
+    <div class="tab-pane fade" id="c">国内内容面板</div>
+    <div class="tab-pane fade" id="d">国外内容面板</div>
+</div>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+<script>
+    $(function(){
+        $("#myTab2 a").click(function(e){
+            e.preventDefault();
+            $(this).tab("show");
+        });
+    })
+</script>

@@ -1,0 +1,268 @@
+.show-phone {
+  padding: 0.9rem 0 0 0;
+  width: 100%;
+  background: #fff;
+  z-index: 11111; 
+}
+
+.code-content {
+  padding-top: 1.33rem;
+  width: 6rem;
+  font-size: 0.62rem;
+  line-height: 1.16;
+  text-align: left;
+  color: #ffffff !important;
+  padding-bottom: 8.9rem;
+  z-index: 111; }
+.code-content .title2{
+  animation:bounceInLeft 1s 0.8s both;
+  margin-top: 0.15rem;
+}
+
+  .code-content .code {
+    margin: 0.39rem 0 0.39rem 0; }
+    .code-content .code img {
+      width: 1.49rem;
+      height: 1.49rem; }
+  .code-content .box {
+    position: relative;
+    width: 2.1rem;
+    height: 0.6rem; 
+      animation:pulse 0.8s 0.8s;
+  }
+  .code-content .upload {
+    width: 100%;
+    height: 100%;
+    background-color: #222328;
+    opacity: 0.2;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 0;
+    left: 0; 
+ 
+  }
+  .code-content .opacity {
+    width: 100%;
+    height: 100%;
+    line-height: 0.6rem;
+    font-size: 0.24rem;
+    text-align: center;
+    color: #ffffff; 
+  }
+
+.backrop {
+  width: 100%;
+  background: #fff; }
+  .backrop img {
+    width: 100%; }
+
+.publish {
+  background: #fff; }
+  .publish .title {
+    font-size: 0.42rem;
+    line-height: 1.24;
+    text-align: center;
+    color: #358ed7;
+    margin-bottom: 0.15rem;
+     }
+  .publish .en-title {
+    font-size: 0.18rem;
+    line-height: 1.56;
+    text-align: center;
+    color: #358ed7;
+    margin-bottom: 1.26rem; }
+  .publish .action {
+    padding-top: 0.64rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 3.43rem;
+    padding-right: 3.75rem;
+    align-items: center; }
+    .publish .action img {
+      width: 10.37rem;
+      height: 4.2rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+  .publish .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 111; }
+  .publish .server, .publish .demand {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-bottom: 0.23rem;
+    background: yellow;
+    border-radius: 50%;
+    text-align: center; }
+  .publish .server {
+    background: url("../images/service.png") center/cover no-repeat; }
+  .publish .demand {
+    background: url("../images/demand.png") center/cover no-repeat; }
+  .publish .word {
+    font-size: 0.24rem;
+    line-height: 1.08;
+    letter-spacing: 0.024rem;
+    text-align: center;
+    color: #ffffff; }
+  .publish .detail {
+    width: 78%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 2.24rem; }
+  .publish .caption {
+    font-size: 0.24rem;
+    line-height: 1.08;
+    letter-spacing: 0.024rem;
+    text-align: center;
+    color: #222328;
+    margin-bottom: 0.41rem; }
+  .publish .matter {
+    font-size: 0.18rem;
+    line-height: 1.56;
+    text-align: center;
+    color: #8c8f94;
+    margin-bottom: 1.64rem; }
+  .publish .demand-detail {
+    margin-left: 0.95rem; }
+
+.technique {
+  width: 100%;
+  padding-top: 0.65rem; }
+  .technique .skill {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .technique .left {
+    width: 4.68rem;
+    margin-top: 1.61rem; }
+  .technique .prompt {
+    font-size: 0.42rem;
+    line-height: 1.24;
+    text-align: left;
+    color: #222328;
+    margin-bottom: 0.85rem; }
+  .technique .prompt-detail {
+    font-size: 0.18rem;
+    line-height: 1.56;
+    text-align: left;
+    color: #8c8f94;
+    margin-bottom: 1.14rem; }
+  .technique .confirm .server {
+    margin-bottom: 0.28rem;
+    display: flex;
+    align-items: center; }
+  .technique .server-pic, .technique .help {
+    width: 0.15rem;
+    height: 0.15rem;
+    margin-right: 0.15rem; }
+  .technique .server-pic {
+    background: url("../images/service--Icon.png") center/cover no-repeat; }
+  .technique .help {
+    background: url("../images/help--Icon.png") center/cover no-repeat; }
+  .technique .server-title {
+    font-size: 0.2rem;
+    line-height: 1.3;
+    letter-spacing: 0.02rem;
+    text-align: left;
+    color: #222328; }
+  .technique .confirm-detail {
+    font-size: 0.18rem;
+    line-height: 1.56;
+    text-align: left;
+    color: #8c8f94;
+    margin-bottom: 0.76rem; }
+  .technique .right img {
+    width: 3.97rem;
+    height: 9.35rem; }
+
+.payfor {
+  width: 100%;
+  background: #fff;
+  padding-top: 1.25rem;
+  padding-bottom: 1.32rem; }
+  .payfor .container {
+    display: flex; }
+  .payfor .left {
+    margin-right: 0.963rem; }
+    .payfor .left img {
+      height: 8.42rem;
+       }
+  .payfor dl {
+    padding-top:1.09rem;
+    padding-bottom: 1.46rem;
+    margin-bottom:0;
+    width: 5.61rem; }
+  .payfor dt {
+    font-size: 0.48rem;
+    line-height: 1.08;
+    text-align: left;
+    color: #000;
+    margin-bottom: 0.43rem; }
+  .payfor dd {
+    font-size: 0.2rem;
+    line-height: 1.4;
+    text-align: left;
+    color: #000; }
+    .payfor dd img {
+      width: 6.13rem;
+      height: 4.11rem;
+      margin-top: 0.42rem; }
+
+.communication {
+  background: #358ed7;
+  padding-top: 0.44rem; }
+  .communication dt {
+    font-size: 0.52rem;
+    line-height: 1.12;
+    letter-spacing: -2.1px;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 2.42rem; }
+  .communication dd {
+    font-size: 0.22rem;
+    line-height: 1.45;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.8); }
+  .communication .chat {
+    width: 3.63rem;
+    height: 0.58rem;
+    background: url("../images/Bubble.png") center/cover no-repeat;
+    margin-top: 0.73rem;
+    font-size: 0.18rem;
+    text-align: center;
+    color: #43484d;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .communication .right {
+    width: 9.02rem;
+    height: 8.97rem;
+    background: url("../images/Pattern1.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .communication .right .iphone {
+      width: 4.42rem;
+      height: 7.75rem;
+      background: url("../images/chat.png") center/cover no-repeat;
+      padding-top: 2.17rem; }
+    .communication .right .chat-box {
+      width: 3.63rem;
+      display: flex;
+      flex-direction: column;
+      background: none; }
+    .communication .right img:nth-child(1) {
+      width: 4.8rem;
+      height: 1.09rem;
+      margin-left: -0.6rem; }
+    .communication .right img:nth-child(2) {
+      width: 4.8rem;
+      height: 0.98rem;
+      margin-top: 0.34rem; }

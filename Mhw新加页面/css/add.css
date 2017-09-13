@@ -1,0 +1,112 @@
+body{
+	overflow: hidden;
+}
+.weui_cells_title{
+	padding-top:0.5rem;
+	padding-bottom: 0.3rem;
+}
+.weui-input{
+	font-size: 0.34rem;
+  font-weight: 500;
+  text-align: left;
+  color: #000000;
+}
+.weui-btn{
+	margin-top: 1.68rem;
+}
+.weui-cells,.weui-cell{
+	height: auto;
+}
+.side{
+	position: relative;
+	margin-top: 1.6rem;
+	width: 100%;
+}
+.weui-uploader__title{
+	  font-family: "微软雅黑";
+	  font-size: 0.24rem;
+	  color: #888888;
+	  text-align: center;
+	  position: absolute;
+	  bottom: -0.5rem;
+	  left: 0;
+	  right: 0;
+	  margin: auto;
+
+}
+.weui_uploader_input_wrp{
+	margin-bottom: 0.5rem;
+}
+.weui-uploader__input-box{
+	margin-right: 0.27rem;
+}
+#showPicker{
+	width: 100%;
+	background: #fff!important;
+	margin-top: 0;
+	text-align: left;
+}
+.info{
+	width: 100%;
+}
+.weui-cells select{
+	width: 100%;
+	border:none!important;
+	outline: none;
+	 appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("../images/arrow.png") no-repeat scroll 6.8rem center transparent;
+
+
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 14px!important;
+}
+select::-ms-expand { display: none; }
+.weui-cells select option{
+	border:#000;
+}
+.page__bd_spacing{
+	background: #fff;
+}
+.weui-cell a{
+	width: 100%;
+	padding:0!important;
+}
+.weui-cell .weui-cell__bd{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.cos{
+	display: flex;
+	align-items: center;
+	 font-size: 0.34rem;
+  font-weight: 500;
+  text-align: left;
+  color: #000000;
+}
+.cos p:nth-child(1){
+	color:red;
+	margin-right: 0.2rem;
+}
+.weui-cell__ft{
+	padding-right: 0.5rem!important;
+}
+.weui-cell__ft img{
+  width: 1.34rem;
+  height: 1.34rem;
+}
+.weui-cell__ft{
+	font-size: 0.32rem;
+  font-weight: 500;
+  text-align: left;
+  color: #c2c2c2;
+}
+.weui-cell_access:active{
+	background: none;
+}
+

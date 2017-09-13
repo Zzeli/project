@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box !important; }
+
+a {
+  text-decoration: none !important; }
+
+body,html{
+  background-color: #d6eef2;
+  width: 100%;
+  overflow-x: hidden; }
+
+.container {
+  padding: 0; 
+  width: 1200px!important;
+  margin:0 auto;
+}
+.container-fluid{
+  padding:0!important;
+}
+.head{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11111;
+}
+.navbar-inverse {
+  background-color: #fff !important;
+  border: none; 
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index:999999;
+  width: 100%;
+  padding:10px 0;
+  border:0!important;
+  border-bottom: 1px solid  #e5e2e2!important;
+  border-radius: 0!important;
+}
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+.collapse{
+  margin-top: 11px;
+}
+.navbar-brandnavbar-brand {
+   font-size: 26px;
+  letter-spacing: 0.6;
+  text-align: left;
+  color: #222222!important; }
+  .navbar-brandnavbar-brand img {
+    width: 51px;
+    height: 51px;
+    margin-right: 25px; }
+
+    .navbar-nav {
+  margin-top: 12px; }
+  .navbar-nav li a{
+    padding-top:0!important;
+    padding-bottom: 0!important; 
+    height: 40px;
+    line-height: 40px!important;
+   width: 126px;
+    color: #252525 !important;
+    text-align: center;
+    margin-right: 20px;
+    }
+
+    .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a{
+  height: 40px;
+  border-radius: 20px;
+  color: #fff !important;
+  background-image: linear-gradient(321deg, #1862fa, #369dfd);
+  box-shadow: 0px 4px 10px 0 rgba(157, 202, 252, 0.75);
+  text-align: center;
+  line-height: 2px;
+  padding-left: 35px;
+  padding-right:35px; }
+
+.navbar-nav > li > a:hover {
+  color: #fff !important; }
+
+@keyframes width
+{
+    0%   {width: 0}
+    100% {width: 126px;}
+}
+
+
+  .nav-animate{
+    height: 40px;
+    position: absolute;
+    background-image: linear-gradient(321deg, #1862fa, #369dfd);
+    box-shadow: 0px 4px 10px 0 rgba(157, 202, 252, 0.75);
+    border-radius: 20px;
+    display: none;
+    animation: width 0.2s linear both alternate!important;
+    /* Firefox: */
+    -moz-animation: width 0.2s linear both alternate!important;
+    /* Safari 和 Chrome: */
+    -webkit-animation: width 0.2s linear both alternate!important;
+    /* Opera: */
+    -o-animation: width 0.2s linear both alternate!important;
+  } 
+
+
+
+
+

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: "Helvetica Neue","微软雅黑",sans-serif;
+            font-size: 16px;
+            background: #fefefe;
+            font-weight: bold;
+        }
+
+        body, h1, h2, h3, p, ul, ol, form, dl, dt, dd, ul, li, span {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            border: none;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-tap-highlight-color: transparent;
+            outline: none;
+            text-decoration: none;
+        }
+
+        a:link {
+            text-decoration: none;
+            /* 指正常的未被访问过的链接*/
+        }
+
+        a:visited {
+            text-decoration: none;
+            /*指已经访问过的链接*/
+        }
+
+        a:hover {
+            text-decoration: none;
+            /*指鼠标在链接*/
+        }
+
+        a:active {
+            text-decoration: none;
+            /* 指正在点的链接*/
+        }
+
+        img {
+            border: none;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        .box{
+            width: 1147px;
+            height: 145px;
+            margin: 0 auto;
+        }
+
+        /**************左边的li**********************/
+        .zuo-box{
+            width: 565px;
+            border-right:1px solid #00a6f1;
+            float: left;
+        }
+
+        .zuo{
+            width: 100%;
+            position: relative;
+            margin-bottom: 50px;
+        }
+        .zuo::after{
+            content: "";
+            width: 100%;
+            height:0;
+            display: inline-block;
+            overflow: hidden;
+        }
+        .zuo-nei-zuo{
+            width: 435px;
+            background: #F6F6F6;
+            float: left;
+            margin-right: 20px;
+        }
+        .zuo-nei-zuo-nei{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            font-size: 16px;
+        }
+        .zuo-nei-zhong{
+            width: 70px;
+            height: 80px;
+            margin-top: 25px;
+            background: #41A5ED;
+            float: left;
+        }
+        .zuo-nei-yuan{
+            width: 10px;
+            height: 10px;
+            border:1px solid #41A5ED;
+            position: absolute;
+            right: -5px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background: #fff;
+        }
+
+/**************右边的li**********************/
+        .you-box{
+            width: 565px;
+            float: left;
+            margin-top: 100px;
+        }
+        .you{
+            width: 100%;
+            position: relative;
+            margin-bottom: 50px;
+        }
+        .you::after{
+            content: "";
+            width: 100%;
+            height:0;
+            display: inline-block;
+            overflow: hidden;
+        }
+        .you-nei-zuo{
+            width: 435px;
+            background: #F6F6F6;
+            float: left;
+        }
+        .you-nei-zuo-nei{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            font-size: 16px;
+        }
+        .you-nei-zhong{
+            width: 70px;
+            height: 80px;
+            margin-top: 25px;
+            background: #41A5ED;
+            float: left;
+            margin-right: 20px;
+            margin-left: 40px;
+        }
+        .you-nei-yuan{
+            width: 10px;
+            height: 10px;
+            border:1px solid #41A5ED;
+            position: absolute;
+            left: -5px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul class="zuo-box">
+        <li class="zuo">
+            <div class="zuo-nei-zuo">
+                <div class="zuo-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+                <div class="zuo-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+                <div class="zuo-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+                <div class="zuo-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+            </div>
+            <div class="zuo-nei-zhong"></div>
+            <div class="zuo-nei-yuan"></div>
+        </li>
+        <li class="zuo">
+            <div class="zuo-nei-zuo">
+                <div class="zuo-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+                <div class="zuo-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+                <div class="zuo-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+                <div class="zuo-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+            </div>
+            <div class="zuo-nei-zhong"></div>
+            <div class="zuo-nei-yuan"></div>
+        </li>
+        <li class="zuo">
+            <div class="zuo-nei-zuo">
+                <div class="zuo-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+                <div class="zuo-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+                <div class="zuo-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+                <div class="zuo-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+            </div>
+            <div class="zuo-nei-zhong"></div>
+            <div class="zuo-nei-yuan"></div>
+        </li>
+    </ul>
+    <ul class="you-box">
+        <li class="you">
+            <div class="you-nei-yuan"></div>
+            <div class="you-nei-zhong"></div>
+            <div class="you-nei-zuo">
+                <div class="you-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+                <div class="you-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+                <div class="you-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+                <div class="you-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+            </div>
+        </li>
+        <li class="you">
+            <div class="you-nei-yuan"></div>
+            <div class="you-nei-zhong"></div>
+            <div class="you-nei-zuo">
+                <div class="you-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+                <div class="you-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+                <div class="you-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+                <div class="you-nei-zuo-nei">撒旦撒大家萨拉快点</div>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

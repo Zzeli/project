@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>优惠券</title>
+    <link rel="stylesheet" href="css/weui.css"/>
+    <link rel="stylesheet" href="css/example.css"/>
+    <link rel="stylesheet" href="css/myself.css">
+    <link rel="stylesheet" href="css/add.css">
+</head>
+<style>
+body,.container{
+     background-color: #fff;
+}
+.weui-cell{
+	padding: 0 0.27rem;
+}
+.weui-cell:nth-child(odd) .weui-cell_access{
+	height: 2rem;
+	background: url(images/ticket.png)center/cover no-repeat;
+    margin-bottom: 0.12rem;
+}
+ .weui-cell:nth-child(even) .weui-cell_access{
+    height: 2rem;
+    background: url(images/yellow.png)center/cover no-repeat;
+    margin-bottom: 0.12rem;
+}
+.weui-cell a{
+     padding-left: 0.35rem!important;
+}
+.weui-cell_access p{
+     font-size: 1.62rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.weui-cell_access:active{
+    background: url(images/ticket.png)center/cover no-repeat;
+}
+
+
+</style>
+<body ontouchstart>
+
+<div class="container" id="container">
+
+      <div class="weui-cells">
+       
+        <div class="weui-cell">
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+               <p>50</p>
+            </a>
+        </div>
+        <div class="weui-cell">
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+                <p>50</p>
+            </a>
+        </div>
+         <div class="weui-cell">
+            <a class="weui-cell weui-cell_access" href="javascript:;">
+              <p>50</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+<script src="js/jquery.js"></script>
+<script>
+$(function(){
+
+
+    $('.weui-cell_access').on('click',function(){
+        $(this).css({'background':'url(images/grey.png)center/cover no-repeat'})
+    })
+
+
+
+})
+
+
+</script>

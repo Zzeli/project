@@ -1,0 +1,17 @@
+@import "base.css";
+@import "mixin";
+body{
+  background: #f4f4f4;
+}
+.weui-cell{
+    font-size: 0.34rem;
+}
+.weui-cell__hd{
+  img{
+    width: 1.34rem;
+    height: 1.34rem;
+  }
+}
+.weui-cell__ft{
+  font-size: 0.32rem;
+}

@@ -1,0 +1,218 @@
+/*banner部分*/
+
+header{
+	width: 100%; 
+	height:732px;
+	/*background:red;*/
+	overflow: hidden;
+    position: relative;
+}
+header nav{
+	width: 1200px; 
+	height:732px;
+	/*background: red;*/
+	position: absolute;
+	left: 50%;
+	margin-left: -600px;
+	z-index: 1;
+}
+header .bannertu{
+	width: 1920px; 
+	height:100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+header nav .danghang{
+	width: 1120px; 
+	height:45px;
+	/*background: black;*/
+	position: absolute;
+	top: 33px;
+}
+.danghang .logo{
+	width: 209px; 
+	height:45px;
+	/*background: yellow;*/
+	float: left;
+	padding-top: 10px;
+	padding-left: 17px;
+}
+.danghang .link{
+	width: 895px; 
+	height:45px;
+	background: black;
+	float: left;
+	padding-top: 12px;
+	padding-left: 7px;
+}
+.link ul li{
+	float: left;
+	width: 110px; 
+	height:20px;
+    /*background:white;*/
+	padding-left: 17px;
+	border-right: 1px solid #c9c8c8;
+}
+.link ul .one{
+	           width: 70px;
+}
+.link ul .two{
+	            width: 130px;
+}
+.link ul .two a{
+	color:#c5c3c3; 
+}
+.link ul .three{
+	            width: 130px;
+}
+.link ul .eight{
+	            border-right:0;
+}
+.link ul li a{
+	font-size: 18px;
+	color: white;
+}
+.link ul li a:hover{
+	                color:#c5c3c3;
+}
+header nav .lunbo{
+	          width: 10px;
+	          height: 96px;
+	          /*background: white;*/
+	          position: absolute;
+	          left: 29px;
+	          bottom: 209px;
+}
+.lunbo .lob{
+	        width: 10px;
+	        height:10px;
+	        background: #454645;
+	        margin-top: 8px;
+	        border-radius: 50%;
+		    cursor: pointer;
+}
+.lunbo .lob3{
+	         width: 10px;
+	         height: 40px;
+	         background:#bcbbbb;
+	         border-radius: 20px;
+}
+.lunbo .lob1{
+	         margin-top: 0px;
+}
+
+
+section{
+	width: 1200px;
+	height: 1540px;
+	/*background: blue;*/
+	margin: 63px auto;
+}
+/*<!-- 面包屑导航 -->*/
+.mbx{
+	width: 269px;
+	height: 22px;
+	margin-left: 20px;
+	/*background: red;*/
+}
+.mbx img{
+	float: left;
+}
+.mbx p{
+	float: left;
+	font-size: 18px;
+	color: #353535;
+	margin-left: 8px;
+}
+.title{
+	width: 517px;
+	height: 193px;
+	/*background: yellow;*/
+	margin: 60px auto;
+	text-align: center;
+}
+.title .daxie{
+	margin-top: 14px;
+	font-size: 18px;
+	font-family: Arial;
+	color: #000000;
+}
+.title .zw{
+	margin-top: 10px;
+	font-size: 24px;
+	color: #3d3d3c;
+	font-weight: bold;
+}
+.title .xiaozi{
+	margin-top: 15px;
+	font-size: 12px;
+	font-family: Arial;
+	color: #2d2c2c;
+	margin-bottom:28px;
+}
+
+
+/*<!-- 主体内容 -->*/
+.zhuti{
+	width: 1000px;
+    height: 1192px;
+    /*background: pink;*/
+    margin: 0 auto;
+}
+
+.zhuti .xbt{
+       width: 273px;
+       height: 53px;
+       /* background: red; */
+}
+.zhuti .zw{
+	margin-top: 50px;
+	font-size: 14px;
+	color: #3d3d3c;
+	line-height: 24px;
+} 
+.zhuti .yw{
+	margin-top: 35px;
+	font-size: 14px;
+	color: #3d3d3c;
+	line-height: 24px;
+	font-family: Arial;
+} 
+.zhuti .chatu{
+	margin-top: 48px;
+}
+.zhuti .xbt2{
+	margin-top: 70px;
+}
+
+
+footer{
+	width: 392px;
+	height: 56px;
+	/*background: pink;*/
+	margin:0 auto;
+	margin-top: 136px;
+	text-align: center;
+	font-size: 12px;
+	font-family: Arial;
+	color:#3d3d3c;
+	line-height: 20px;
+}
+footer p span{
+	font-size: 14px;
+}
+footer p span span{
+	font-weight: bold;
+}
+
+.foot{
+	width: 100%;
+	height: 70px;
+	background:#c9c9c9;
+	margin-top: 27px;
+	line-height: 70px;
+	text-align: center;
+	font-size: 12px;
+	color: #3c3c3c;
+}

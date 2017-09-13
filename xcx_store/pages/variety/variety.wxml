@@ -1,0 +1,3 @@
+<!--variety.wxml-->
+   <import src="../template/template.wxml" /> 
+  <template is="list" data="{{list,searchList,nodes}}"></template>

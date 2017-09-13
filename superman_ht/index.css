@@ -1,0 +1,206 @@
+@import url("mixin.scss");
+.content{
+	padding:26px 135px 0 65px;
+}
+h3{
+	 font-family: "Microsoft YaHei";
+	  font-size: 14px;
+	  text-align: left;
+	  color: #000000;
+	  margin-bottom: 72px;
+	}
+.action{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 30px;
+	}
+	.action .media{
+		margin-left: 30px;
+		margin-top: 0;
+		border-radius: 4px;
+		padding: 28px 0 34px 28px;
+	}
+	.action .media:first-child{
+		margin-left: 0;
+		background:url(images/action1.png)bottom/cover no-repeat;
+	}
+	.action .media:nth-child(2){
+		 background:url(images/action2.png)bottom/cover no-repeat;
+	}
+	.action .media:nth-child(3){
+		 background:url(images/action3.png)bottom/cover no-repeat;
+	}
+	.action .media:nth-child(4){
+		  background:url(images/action4.png)bottom/cover no-repeat;
+	}
+	.action .media:nth-child(5){
+		 background:url(images/action5.png)bottom/cover no-repeat;
+	}
+	.action h4{
+		  font-family: "Microsoft YaHei";
+		  font-size: 18px;
+		  font-weight: bold;
+		  text-align: left;
+		  color: #ffffff;
+		  margin-bottom: 22px;
+	}
+	.action .media-body{
+		  font-family: Arial;
+		  font-size: 36px;
+		  text-align: left;
+		  color: #ffffff;
+	}
+	.action-body{
+		display: flex;
+		justify-content: space-between;
+	}
+	.action-body .list-group{
+		padding-top: 26px;
+	    padding-left: 33px;
+	    padding-right: 43px;
+	    padding-bottom: 37px;
+		width: 32%;
+		 border: solid 1px #e5e4e4;
+		 border-radius: 4px;
+	}
+	.action-body .list-group h4{
+	  font-family: "Microsoft YaHei";
+	  font-size: 18px;
+	  text-align: left;
+	  color: #151515;
+	  margin-bottom: 38px;
+}
+.list-group .list li{
+	border:none;
+	 font-family: "Microsoft YaHei";
+	  font-size: 14px;
+	  text-align: left;
+	  color: #6c6a6a;
+	  padding-left: 0;
+}
+.badge{
+		background: none;
+		font-family: "Microsoft YaHei";
+	    font-size: 12px;
+	    text-align: left;
+	    color: #6c6a6a;
+}
+.list-group .list li p{
+	 width: 13px;
+    height: 16px;
+    display: block;
+    background: url("images/card.png")center/cover no-repeat;
+    float: left;
+    margin-right: 23px;
+}
+.backlog{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.list-group-item-text{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	margin-bottom: 45px;
+}
+.list-group-item-text h5{
+	  font-family: "Microsoft YaHei";
+	  font-size: 16px;
+	  text-align: left;
+	  color: #6c6a6a;
+}
+.list-group-item-text .btn{
+	margin-top: 10px;
+	background:none;
+	border-radius: 2px;
+    border: solid 1px #b5b5b5;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    color: #383737;
+    position: relative;
+    width: 118px;
+	outline: none;
+
+}
+.list-group-item-text .btn .badge{
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 19px;
+	height: 19px;
+	background-color: #56a6f0;
+	font-family: "Microsoft YaHei";
+   font-size: 10px;
+   font-weight: bold;
+   color: #ffffff;
+   text-align: center;
+   padding:0;
+   line-height: 19px;
+}
+
+
+.circliful { 
+    position: relative;  
+} 
+.circle-text, .circle-info, .circle-text-half, .circle-info-half { 
+    width: 100%; 
+    position: absolute; 
+    text-align: center; 
+    display: inline-block; 
+} 
+.circle-info, .circle-info-half { 
+    color: #999; 
+} 
+.circliful .fa { 
+    margin: -10px 3px 0 3px; 
+    position: relative; 
+    bottom: 4px; 
+} 
+.myStat{
+	color: #000;
+}
+.statistics{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+}
+
+.kiting,.platform{
+	padding-right: 20px;
+	height: 20px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+}
+.kiting{
+	background-color: #56a6f0;
+}
+.platform{
+	 background-color: #fbcc3d;
+
+	}
+.sort{
+	margin-bottom: 60px;
+	width: 100px;
+}
+.sort .media-body{
+	padding-left: 10px;
+}
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+	background: none;
+	border: solid 1px #b5b5b5;
+	outline: none;
+	color: #383737;
+	outline: none;
+}
+.circle-info-half{
+	  font-family: "Microsoft YaHei";
+	  font-size: 22px;
+	  text-align: center;
+	  color: #363636;
+}
